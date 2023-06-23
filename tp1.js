@@ -61,6 +61,7 @@ function main() {
   console.log(arrayToLengthCounters(['gato', 'perro', 'elefante']));
   console.log("Ejercicio 3");
   console.log(findKeysInCommon({a: 1, b: 2, c: 3}, {b: 4, c: 5, d: 6}));
+  console.log("Final del Practico");
 }
 
 main();
