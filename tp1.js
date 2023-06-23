@@ -27,6 +27,14 @@ function extractValues(data) {
 
 function arrayToLengthCounters(array) {
   // Tu código aquí
+  const objeto = [];
+  
+  for (let key in array) {
+    const value = array[key];
+    Object.keys(objeto.push(value));
+    Object.values(objeto.push(value.length));
+  }
+  return objeto;
 }
 
 /*  
@@ -44,8 +52,11 @@ function findKeysInCommon(objeto1, objeto2) {
 // Llamamos a las funciones y mostramos los resultados
 
 function main() {
+  console.log("Ejercicio 1");
   console.log(extractValues({a: 1, b: 2, c: 3}));
+  console.log("Ejercicio 2");
   console.log(arrayToLengthCounters(['gato', 'perro', 'elefante']));
+  console.log("Ejercicio 3");
   console.log(findKeysInCommon({a: 1, b: 2, c: 3}, {b: 4, c: 5, d: 6}));
 }
 
