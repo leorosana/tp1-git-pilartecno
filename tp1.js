@@ -7,7 +7,15 @@
 
 function extractValues(data) {
   // Tu código aquí
-}
+  const values = [];
+  
+  for (let key in data) {
+    const value = data[key];
+    values.push(value);
+  }
+  return values;
+  }
+
 
 /*  
   Ejercicio 2: 
